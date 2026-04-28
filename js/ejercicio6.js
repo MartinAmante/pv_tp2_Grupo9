@@ -7,7 +7,6 @@ for(let i = 0; i < edades.length; i++)
     console.log(edades[i] + " años");
 }
 
-
 const promedioEdades = edad => {
     let suma = 0;
     for(let i = 0; i < edad.length; i++)
