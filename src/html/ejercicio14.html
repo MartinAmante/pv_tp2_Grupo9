@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 14</title>
+</head>
+<body>
+    <script>
+        const duplicar = (arreglo) => {
+            return arreglo.map(numero => numero * 2);
+        };
+
+        let cantidad = prompt("Tamaño del array");
+        let numeros = [];
+
+        for (let i = 0; i < cantidad; i++){
+            let num = Number(prompt("Ingrese un numero"));
+            numeros.push(num);
+        }
+
+        let resultado = duplicar(numeros);
+        alert(`Array original ${numeros}`);
+        alert(`Array multiplicado ${resultado}`);
+    </script>
+</body>
+</html>
