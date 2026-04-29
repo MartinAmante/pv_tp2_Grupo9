@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 11</title>
+</head>
+<body>
+    <script>
+      const kilometros = prompt("Ingrese los kilómetros recorridos:");
+const litros = prompt("Ingrese los litros consumidos:");
+
+const calcularConsumo = (km, lt) => {
+    const consumo = lt / km;
+    return consumo;
+};
+
+alert(`Recorriste ${kilometros} km y consumiste ${litros} litros `);
+alert(`El consumo por kilómetro es: ${calcularConsumo(kilometros, litros).toFixed(2)} litros/km`);
+    </script>
+</body>
+</html>
