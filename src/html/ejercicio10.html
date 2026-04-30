@@ -1,0 +1,37 @@
+<!-- 10. Solicitar al usuario que ingrese la cantidad de números que desea ingresar. 
+// Pedir que ingrese esa cantidad de números enteros de forma iterativa
+// guardar los números en un array. 
+// Luego mostrar los números ingresados y el promedio.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        let cantidad = parseInt(prompt("Ingrese una cantidad de números"));
+//Busqué usar parseInt porque convierte las cadenas a números y 
+// dado que todo lo que entra por el prompt es cadena, aquí es clave para desarrollar el resto del ejercicio.
+        let numeros = [];
+        let contador = 0;
+        let num = 0;
+        let suma = 0;
+        while (contador < cantidad) {
+            let num = parseInt(prompt("ingrese un número, sin decimales"));
+            numeros.push(num);
+            contador++;
+        }
+        for (let i = 0; i < numeros.length; i++) {
+            suma = suma + numeros[i];
+        }
+// pense en actualizar la variable num antes de salir del bucle pero encontré que 
+// al ser una variable local, la misma se autodestruye en cada vuelta
+        document.write(`Números ingresados ${numeros}<br>`)
+        document.write(`El promedio de los números ingresados es ${suma/numeros.length}`)
+//para  escribir en la página use document.write 
+// y con ${ } puedo ingresar tanto variables, como operaciones y expresiones
+    </script>
+</body>
+</html>

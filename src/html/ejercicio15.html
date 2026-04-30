@@ -1,0 +1,28 @@
+<!--Escribir una función llamada retornarMes, que reciba un número entero y si
+corresponde a un mes del año devolver el nombre del mes, si no se cumple entonces
+mostrar un mensaje que no es un mes.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+</head>
+<body>
+    <script>
+        let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Setiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        let usuariomes = parseInt(prompt("Ingrese un número de mes"));
+        let retornarMes = (mes) => {
+        if (Number.isInteger(mes)) {
+            if (mes>0 && mes<13) {
+                return meses[mes-1];
+                }
+                return "No es un mes"
+            }
+            return "No es un mes"
+        }
+        document.write(`Resultado: ${retornarMes(usuariomes)}`);
+    </script>
+    
+</body>
+</html>
