@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const inicio = Number(prompt("Ingrese el número inicial:"));
+const fin = Number(prompt("Ingrese el número final:"));
+
+const sumarRango = (numInicio, numFin) => {
+    let suma = 0;
+
+    for (let i = numInicio; i <= numFin; i++) {
+        suma = suma+i ;
+    }
+
+
+    return suma;
+};
+
+if (inicio <= fin) {
+    if(inicio == fin)
+    alert(`Los numero son iguales`);
+        else{
+        alert(`La suma entre ${inicio} y ${fin} es: ${sumarRango(inicio, fin)}`);
+        }      
+} 
+else {
+    alert(`El número inicial debe ser menor o igual al número final`);
+}
+    </script>
+</body>
+</html>
