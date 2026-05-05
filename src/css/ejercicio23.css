@@ -6,6 +6,7 @@ body{
     background-color: #fae100;
     transition: background-color 0.2s ease;
     flex-direction: column;
+    font-family: monospace;
     gap: 80px;
 }
 
@@ -21,6 +22,7 @@ input[type="text"]{
    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
    transition: transform 0.1s ease, background-color 0.2s ease;
    font-family: monospace;
+
 }
 input[type="text"]:hover {
    background-color: #1b150a;
@@ -29,5 +31,6 @@ p{
     font-size: 40px;
     font-weight: bold;
     color: #2c2412;
-    font-family: monospace;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    border-radius: 8px;
 }
