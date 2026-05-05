@@ -1,0 +1,29 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+    margin: 0%;
+    background-color: #e0e0e0;
+    transition: background-color 0.2s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+#btn_cambioDeColor{
+   padding: 15px 32px;
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   background-color: #2c3e50;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+   transition: transform 0.1s ease, background-color 0.2s ease;
+}
+#btn_cambioDeColor:hover {
+   background-color: #243241;
+}
+#btn_cambioDeColor:active {
+   transform: scale(0.95);
+}
