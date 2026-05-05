@@ -17,18 +17,19 @@ Mostrar el valor seleccionado también en la consola.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/ejercicio24.css">
+    <link rel="stylesheet" href="../assets/ejercicio24.css">
     <title>Ejercicio 24</title>
 </head>
 <body>
 
-    <h1>Tipos de aves </h1>
-    <p>Que ave te gustaria ver? </p>
+    <h1>~~~ Tipos de aves ~~~</h1>
+    <p class="pregunta"> Que ave te gustaria investigar? </p>
     <div>
         <ul class="Laves">
             <li>       
                 <input type="radio" id="gaviota" name="ave" value="Gaviota">
                 <label for="gaviota">Gaviota.</label>
+                <!-- lo que se clikea es el label -->
             </li>
             <li>
                 <input type="radio" id="tucan" name="ave" value="Tucan">
@@ -39,10 +40,11 @@ Mostrar el valor seleccionado también en la consola.
                 <label for="hornero">Hornero.</label>
             </li>
             <li>  
-                <input type="radio" id="alcon" name="ave" value="Alcon">
-                <label for="alcon">Alcon Peregrino.</label>
+                <input type="radio" id="halcon" name="ave" value="Halcon">
+                <label for="halcon">Halcon Peregrino.</label>
             </li>
         </ul>
+        <br>
         <div id="mostrar">
                 <p>Por que decimos "ave" y no "pajaro" <br> Esto ya que no todas las aves son pájaros. Y los pajaros no son aves</p>
         </div>
