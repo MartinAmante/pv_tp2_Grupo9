@@ -7,6 +7,15 @@
 </head>
 <body>
     <h1>Bienvenido al Ejercicio 17</h1>
-    <script src="../js/ejercicio17.js"></script>
+        <script> 
+        let contador=0;
+        let palabra = String(prompt("Ingrese una palabra: "));
+        for(let i=0;i<palabra.length;i++){
+            if(palabra[i]=="a"){
+                contador++;
+            }
+        }
+        alert("La cantidad de letras 'a' es: " + contador);    
+    </script>
 </body>
 </html>
