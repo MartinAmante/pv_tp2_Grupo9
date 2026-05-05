@@ -1,0 +1,53 @@
+
+<!--  
+    Construir una página web utilizando Html, Css y JavaScript que muestre un grupo de
+botones de opción (radio) con diferentes opciones. Al seleccionar una opción, el
+resultado debe mostrarse en tiempo real en otro elemento de la página (por ejemplo,
+un <p> o un <div>).
+Las opciones de los botones pueden ser por ejemplo lenguajes de programación. Crear
+al menos 3 botones de opción (radio).
+Mostrar el valor seleccionado en tiempo real en otro elemento visible.
+Aplicar estilos básicos con Css para una buena presentación.
+Usar JavaScript para capturar el evento change y actualizar el contenido
+dinámicamente.
+Mostrar el valor seleccionado también en la consola.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ejercicio24.css">
+    <title>Ejercicio 24</title>
+</head>
+<body>
+
+    <h1>Tipos de aves </h1>
+    <p>Que ave te gustaria ver? </p>
+    <div>
+        <ul class="Laves">
+            <li>       
+                <input type="radio" id="gaviota" name="ave" value="Gaviota">
+                <label for="gaviota">Gaviota.</label>
+            </li>
+            <li>
+                <input type="radio" id="tucan" name="ave" value="Tucan">
+                <label for="tucan">Tucan.</label>
+            </li>
+            <li>
+                <input type="radio" id="hornero" name="ave" value="Hornero">
+                <label for="hornero">Hornero.</label>
+            </li>
+            <li>  
+                <input type="radio" id="alcon" name="ave" value="Alcon">
+                <label for="alcon">Alcon Peregrino.</label>
+            </li>
+        </ul>
+        <div id="mostrar">
+                <p>Por que decimos "ave" y no "pajaro" <br> Esto ya que no todas las aves son pájaros. Y los pajaros no son aves</p>
+        </div>
+    </div>
+    
+    <script type="module" src="../js/ejercicio24.js">  </script>
+</body>
+</html>
